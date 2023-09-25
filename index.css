@@ -1,0 +1,121 @@
+
+.container{
+    background-color: #F1F1F1;
+}
+
+
+header{
+    z-index: 999;
+    position: fixed;
+    background: #34353A;
+    top: 0;
+    left: 0;
+    width: 80% ;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+header .logo{
+    color: darkorange ;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .nav-bar a{
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+header .nav-bar a:hover{
+    color: darkorange;}
+
+
+
+main{
+ position: relative;
+
+}
+
+.hero{
+    position: absolute;
+    top:10%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+img{
+    width: 100%;
+    
+}
+
+
+.skill{
+    background-color: #34353A;
+    display: grid;
+    grid-template-rows: 150px repeat(2,1fr);
+}
+
+.skill-row-1 , .skill-row-2, .skill-row-3,.skill-row-4{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.col{
+    border: 2px solid black;
+    background-color: #3D3E42;
+    width: 175px;
+    height: 175px;
+    margin: 16px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.col:hover{
+    animation-delay: 2s;
+    background-color: #ce9a41;
+}
+
+p{
+
+    color: white;
+}
+
+
+h1{
+        align-items: flex-start;
+        color: white;
+        text-align: center;
+        font-size: 70px ;
+}
+
+.skill img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+footer{
+    background: #34353A;
+
+}
