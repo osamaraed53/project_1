@@ -4,13 +4,25 @@
 }
 
 
+h1{
+    align-items: flex-start;
+    font-size: 60px ;
+    /* color: white;
+    text-align: center; */
+}
+
+span{
+    color: #21ebff;
+}
+
+/* nav bar */
 header{
     z-index: 999;
     position: fixed;
     background: #34353A;
     top: 0;
-    left: 0;
     width: 80% ;
+    right:10px;
     padding: 15px 200px;
     display: flex;
     justify-content: space-between;
@@ -18,7 +30,7 @@ header{
     transition: 0.5s ease;
 }
 header .logo{
-    color: darkorange ;
+    color: #21ebff ;
     font-size: 1.8em;
     font-weight: 700;
     text-transform: uppercase;
@@ -32,29 +44,21 @@ header .nav-bar a{
     margin-left: 30px;
 }
 header .nav-bar a:hover{
-    color: darkorange;}
+    color: #21ebff;}
 
-
+/* hero section */
 
 main{
  position: relative;
+ /* background-color: #3D3E42; */
 
 }
 
 .hero{
     position: absolute;
-    top:10%
+    top: 25%;
+    left:6%
 }
-
-
-
-
-
-
-
-
-
-
 
 
 img{
@@ -62,6 +66,101 @@ img{
     
 }
 
+
+
+section h2 span {
+    display: inline-flex;
+    color: #21ebff;
+    font-size: larger;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing infinite;
+    animation-duration: 4s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+    border-right: 3px solid #21ebff;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 79%;
+    }
+  }
+
+
+h2{
+    color: #34353A;
+    font-size: 50px;
+  }
+
+  .btn-box {
+    width: 350px;
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .btn-box a {
+    width: 300px;
+    height: 40px;
+    background-color: #34353A;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #21ebff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-weight: 800;
+    box-shadow: 2px 2px 8px;
+  }
+
+  .vertical-line1 {
+    position: absolute;
+    top: 25%;
+    right:6%;
+    border-left: 6px solid #34353A;
+    height: 500px;
+  }
+/* about */
+
+.about{
+    padding: 20px;
+    background-color: #34353A; 
+    position: relative;
+
+}
+
+.about h1{
+    margin-left: 5.6% ;
+    color:#F1F1F1
+    
+}
+
+.horizontal-line1 {
+    position: absolute;
+    margin-left: 5.6% ;
+    top:51%; 
+    border: 3px solid #21ebff;
+    width: 4%;
+
+  }
+  .p{
+    /* position: absolute; */
+    margin-left: 10.6% ;
+    margin-right: 5.4%;
+    font-size: x-large;
+  }
+
+
+
+/* my skills */
 
 .skill{
     background-color: #34353A;
@@ -91,20 +190,17 @@ img{
 
 .col:hover{
     animation-delay: 2s;
-    background-color: #ce9a41;
+    background-color: #21ebff;
 }
 
-p{
-
+.skill p{
     color: white;
 }
 
 
-h1{
-        align-items: flex-start;
+.skill h1{
         color: white;
         text-align: center;
-        font-size: 70px ;
 }
 
 .skill img{
@@ -113,9 +209,128 @@ h1{
 }
 
 
+/* Portfolio */
+
+/* .portfolio{
+    margin-top: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: 150px 300px 300px;
+    background-color: #F1F1F1;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.portfolio h1{
+    color: #3D3E42;
+    text-align:center;
+    grid-column: span 3;
+}
+
+.portfolio div{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #3D3E42 ;
+    margin-bottom: 30px;
+}
+
+*/
+
+    .resume{
+        padding:5.6%;
+        background-color: #F1F1F1;
+    }
+    .resume p{
+        color: #34353A;
+    }
+
+
+ .resume .resume-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #34353A;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #34353A;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #F1F1F1;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #3D3E42;
+  }
+  
+
+
+
+
+
+
+
+/* .portfolio{
+    margin-top: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 250px 360px 250px 250px;
+    background-color: #F1F1F1;
+    justify-content: space-around;
+    
+
+} 
+
+ */
+
+
 
 
 footer{
     background: #34353A;
 
 }
+
+
+
