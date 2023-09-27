@@ -1,12 +1,20 @@
+html{
+    scroll-behavior: smooth;
 
-.container{
+}
+* {
+  box-sizing: border-box;}
+
+.con{
     background-color: #F1F1F1;
+    width: 100%;
+    height: 100%;
 }
 
 
 h1{
     align-items: flex-start;
-    font-size: 60px ;
+    font: size 10vw; 
     /* color: white;
     text-align: center; */
 }
@@ -16,35 +24,39 @@ span{
 }
 
 /* nav bar */
-header{
-    z-index: 999;
-    position: fixed;
-    background: #34353A;
-    top: 0;
-    width: 80% ;
-    right:10px;
-    padding: 15px 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s ease;
+.navbar .navbar-brand{
+    padding-left: 7%;
+ }
+.navbar ul {
+  padding-right: 7%;
+  padding-left: 7%;
+
 }
-header .logo{
+
+.navbar a{
+  color: #F1F1F1;
+}
+
+.navbar ul a:hover{
+    color: #21ebff;} 
+
+/* .logo{
     color: #21ebff ;
-    font-size: 1.8em;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: xx-large;
     text-decoration: none;
-}
-header .nav-bar a{
+
+}  */
+
+/* .nav-link{
     color: white;
-    font-size: 1em;
+    text-decoration: none; */
+    /* font-size: 1em;
     font-weight: 500;
-    text-decoration: none;
-    margin-left: 30px;
-}
-header .nav-bar a:hover{
-    color: #21ebff;}
+    margin-left: 30px; */
+/* } */
+
+/* .nav-link:hover{
+    color: #21ebff;} */
 
 /* hero section */
 
@@ -57,12 +69,13 @@ main{
 .hero{
     position: absolute;
     top: 25%;
-    left:6%
+    left:7%
 }
 
 
-img{
+.main img{
     width: 100%;
+    height: 50%;
     
 }
 
@@ -74,12 +87,11 @@ img{
     font-size: larger;
     overflow: hidden;
     white-space: nowrap;
-    width: 0;
     animation: typing infinite;
     animation-duration: 4s;
     animation-timing-function: steps(30, end);
     animation-fill-mode: forwards;
-    border-right: 3px solid #21ebff;
+    border-right: 1% solid #21ebff;
   }
   
   @keyframes typing {
@@ -94,12 +106,12 @@ img{
 
 h2{
     color: #34353A;
-    font-size: 50px;
+    font: size 8vw; 
   }
 
   .btn-box {
-    width: 350px;
-    height: 100px;
+    width: 70%;
+    height: 10%;
     justify-content: space-between;
     display: flex;
     justify-content: center;
@@ -118,43 +130,35 @@ h2{
     color: white;
     align-items: center;
     font-weight: 800;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 2% 2% 8%;
   }
 
-  .vertical-line1 {
+  /* .vertical-line1 {
     position: absolute;
     top: 25%;
     right:6%;
     border-left: 6px solid #34353A;
     height: 500px;
-  }
+  } */
 /* about */
 
 .about{
-    padding: 20px;
+    padding:2%;
     background-color: #34353A; 
     position: relative;
 
 }
 
 .about h1{
-    margin-left: 5.6% ;
+    margin-left: 6% ;
     color:#F1F1F1
     
 }
 
-.horizontal-line1 {
-    position: absolute;
-    margin-left: 5.6% ;
-    top:59%; 
-    border: 3px solid #21ebff;
-    width: 4%;
-
-  }
   .p{
     /* position: absolute; */
-    margin-left: 10.6% ;
-    margin-right: 5.4%;
+    margin-left: 6% ;
+    margin-right: 6%;
     font-size: x-large;
   }
 
@@ -162,33 +166,44 @@ h2{
 
 /* my skills */
 
+
+#skills{
+  background-color: #34353A;
+}
+#skills h1{
+        padding-top: 2%;
+        color: white;
+        text-align: center;
+}
+
 .skill{
     background-color: #34353A;
-    display: grid;
-    grid-template-rows: 150px repeat(2,1fr);
-}
-
-.skill-row-1 , .skill-row-2, .skill-row-3,.skill-row-4{
     display: flex;
+    flex: 0 1 24%;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-}
+    padding: 1% 7% 4%;
+  }
 
-.col{
-    border: 2px solid black;
+.cols{
+    border: 2% solid black;
     background-color: #3D3E42;
-    width: 175px;
-    height: 175px;
-    margin: 16px;
-    border-radius: 45px;
+    width: 11em;
+    height: 11em;
+    margin:2%;
+    border-radius: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+
+
+
 }
 
-.col:hover{
+
+
+.cols:hover{
     animation-delay: 2s;
     background-color: #21ebff;
 }
@@ -198,11 +213,6 @@ h2{
 }
 
 
-.skill h1{
-        color: white;
-        text-align: center;
-}
-
 .skill img{
     width: 100px;
     height: 100px;
@@ -211,38 +221,12 @@ h2{
 
 /* Portfolio */
 
-/* .portfolio{
-    margin-top: 50px;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: 150px 300px 300px;
-    background-color: #F1F1F1;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
 
-
-.portfolio h1{
-    color: #3D3E42;
-    text-align:center;
-    grid-column: span 3;
-}
-
-.portfolio div{
-    width: 250px;
-    height: 250px;
-    border: 2px solid #3D3E42 ;
-    margin-bottom: 30px;
-}
-
-*/
+ /* RESUME */
 
     .resume{
         padding:5.6%;
-        background-color: #F1F1F1;
+        background-color: white;
     }
     .resume p{
         color: #34353A;
@@ -307,24 +291,72 @@ h2{
 
 
 
+  /* portfolio */
+
+#projects{
+  background-color: #34353A;
+
+}
+
+#projects h1{
+    padding-top:2% ;
+      color: white;
+    text-align: center;
+}
 
 
-
-
-/* .portfolio{
-    margin-top: 50px;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 250px 360px 250px 250px;
-    background-color: #F1F1F1;
-    justify-content: space-around;
-    
-
+.portfolio{
+    display: flex;
+    flex: 0 1 25%;
+    flex-wrap: wrap;
+    justify-content: center;
 } 
 
- */
+.portfolio .containers {
+    width: 25em;
+    height: 25em;
+    margin: 2%;
+    border: 2px solid #21ebff;
+    position: relative;
+
+}
 
 
+  
+.portfolio .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .portfolio .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3D3E42;
+  }
+  
+  .portfolio .containers:hover .overlay {
+    opacity: 0.9;      
+  }
+  
+  .portfolio .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
 footer{
@@ -335,7 +367,7 @@ footer{
 
 footer p{
     color: #F1F1F1;
-    padding: 25px;
+    padding: 10%;
 }
 
 
